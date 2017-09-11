@@ -1,0 +1,273 @@
+/*--------------------------------- Table of contents ------------------------------------- /
+*
+*  1 - Import Google Font
+*  2 - General styles
+*    2.1 - Headings
+*  3 - Global Settings 
+*    3.1 - Title Style
+*    3.2 - Description Style
+*    3.3 - Carousel
+*  4 - Parallax
+*  5 - Shortcode
+*	 5.1 - Page Name Section
+*	 5.2 - Buttons
+*	 5.3 - Social Buttons
+*	 5.4 - Item Related Style
+*	 5.5 - About Section
+*	 5.6 - Pricing Table Section
+*	 	5.6.1 - Plan Name
+*	 	5.6.2 - Package price
+*	 	5.6.3 - Currency
+*	 5.7 - Latest News
+*	 5.8 - Progress Bar
+*	 5.9 - Accordions
+
+*  6 - Header Section
+*  7 - Main Menu
+*  8 - Main Slider Section
+*  9 - Team Member
+*  10 - Portfolio Section
+*  11 - Service Section
+*  12 - Testimonial Section
+*  13 - Client Logo Section
+*  14 - Google Map
+*  15 - Contact Section
+*  16 - Footer
+*  17 - Scroll To Top
+*  18 - Blog Page
+*  19 - Blockquote
+*  20 - Attachment Link
+*  21 - Pagination
+*  22 - Single Page
+*  	  22.1 - Author Social Share
+*  	  22.2 - Author Bio
+*  	  22.3 - Comments
+*  23 - Portfolio Details
+*  24 - Sidebar
+*     24.1 - Widgets
+*     24.2 - Search Widget
+*     24.3 - widget_img
+*     24.4 - Categories, Archive Widget & Project Details
+*     24.5 - Recent Post Widget
+*     24.6 - Tag Widget
+*     24.7 - Calendar
+*
+---------------------------------------------------------------------- */
+
+
+
+/* 1 - Google Font
+------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=BenchNine:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic);
+
+/* 1 - Google Font End 
+------------------------------------------------------------------------*/
+
+
+/* 2 - General styles
+---------------------------------------------------------------------- */
+
+/* Global Settings 
+==============================================================*/
+
+.section-area {
+	padding-top: 40px;
+}
+
+
+
+
+
+
+/* Buttons
+----------------------------------------------*/
+
+
+.dark-green .btn:hover,
+.dark-green .service-item:hover .btn {
+	background-color: #ffffff;
+	border: 2px solid #16a085;
+	color:#16a085; 
+}
+
+
+.service-item .item-top:after,
+.service-item.item-top i{
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.service-item .item-top:after {
+	content: "";
+	top: -4%;
+	left: -4%;
+	position: absolute;
+	z-index: -1;
+	box-shadow: 3px 3px transparent;
+	width: 107%;
+	height: 107%;
+	border-radius: 50%;
+	padding: 15px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.dark-green .service-item:hover .item-top:after {
+	box-shadow: 3px 3px #1fb5ac !important;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+
+
+.service-item:hover:hover .fa-wrench:after {
+	box-shadow: 3px 3px red;
+}
+
+
+
+
+
+/* Item Related Style
+--------------------------------*/
+.item-top {
+	border-radius: 100%;
+	display: inline-block;
+	padding: 3px;
+	position: relative;
+}
+.item-top:before {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 1px;
+	left: 50%;
+	margin-left: -15px;
+	bottom: -15px;
+}
+.dark-green .item-top:before {
+	background-color: #16a085;
+}
+.blue .item-top:before {
+	background-color: #2980b9;
+}
+.green .item-top:before {
+	background-color: #27ae60;
+}
+.orange .item-top:before {
+	background-color: #f39c12;
+}
+.purple .item-top:before {
+	background-color: #8e44ad;
+}
+.red .item-top:before {
+	background-color: #c0392b;
+} 
+.item-title {
+	padding-top: 30px;
+	font-family: BenchNine;
+}
+.item-icon {
+	border-radius: 100%;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 2.3em;
+	height: 80px;
+	line-height: 80px;
+	width: 80px;
+	text-align: center;
+	position: relative;
+}
+.service-icon {
+	border: 1px solid #dcdcdc;
+	padding: 2px;
+}
+.icon-image {
+	position: relative;
+}
+.icon-image:before {
+	content: '';
+	bottom: -25px;
+	text-align: center;
+	height: 1px;
+	width: 30px;
+	position: absolute;
+	margin-left: 39px;
+	left: 0px;
+}
+.purple .icon-image:before {
+	background-color: #8e44ad;
+}
+.red .icon-image:before {
+	background-color: #c0392b;
+}
+.dark-green .item-icon {
+	background-color: #16a085;
+}
+.blue .item-icon {
+	background-color: #2980b9;
+}
+.green .item-icon {
+	background-color: #27ae60;
+}
+.orange .item-icon {
+	background-color: #f39c12;
+}
+.purple .item-icon {
+	background-color: #8e44ad;
+}
+.red .item-icon {
+	background-color: #c0392b;
+}
+
+/* Item Related Style
+--------------------------------*/
+
+
+/* Service Section
+--------------------------------------------------------------*/
+.service .section-area {
+	padding-bottom: 10px;
+}
+.service-item {
+	padding-bottom: 45px;
+}
+.services .item-title {
+	color: #242424;
+}
+.shortcode-page .service-item {
+	padding-bottom: 100px;
+}
+.service-item .item-description {
+	color: #999999;
+}
+.service-btn {
+	padding-top: 25px;
+}
+.service-btn .btn {
+	border: 2px solid transparent;
+	font-size: .81em;
+	font-weight: 700;
+	font-family: BenchNine;
+	padding: 9px 23px 7px 23px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.purple .service-item .item-top {
+	border: none;
+}
+.purple .service-item .icon-image:before {
+	bottom: -70px;
+}
+
+/* Service Section End
+--------------------------------------------------------------*/

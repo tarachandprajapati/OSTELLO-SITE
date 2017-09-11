@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    
+<!-- Mirrored from ojass.in/2016/archive/2015/registration/studentregistration.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Dec 2016 16:06:41 GMT -->
+<head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Registration |  Ojass '15 | NIT Jamshedpur</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Ojass NIT Jamshedpur" />
+	<meta name="keywords" content=" ojass'15 , ojass, registration, ojass registration,  techfest , nit jamshedpur,2014,nitjsr, ojass, annual,technomanagement, millions,events, money, career, certificate" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="creTeaTeamOjass" />
+		<link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+         
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        
+        
+        <script type="text/javascript">
+		
+		function validate() {
+		    var x = document.forms["reg_form"].item("FirstName").value;
+			alert(x);
+			    if (x == null || x == "") 
+				{
+			        //alert("Name must be filled out!");
+					document.forms["reg_form"].item("FirstName").focus();
+					return false;
+	    		}
+				var x = document.forms["reg_form"]["LastName"].value;
+			    if (x == null || x == "") 
+				{
+			        //alert("Name must be filled out!");
+					document.forms["reg_form"].item("LastName").focus();
+					return false;
+	    		}
+				var x = document.reg_form.LastName.value;
+			    if (x == null || x == "") 
+				{
+			        //alert("Name must be filled out!");
+					document.reg_form.LastName.focus();
+					return false;
+	    		}
+				
+		}	
+
+
+function ValidateEmail() {  
+     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(reg_form.EmailId.value))  
+      {  
+        return (true)  
+      } 
+        alert("You have entered an invalid email address!")  
+        return (false)  
+    } 	
+	
+	function contactno()
+	{
+		if(isNaN(document.reg_form.Mobile.value))
+		{
+			document.reg_form.Mobile.value = "";
+			alert("Please Enter Only Digit !");
+			return ;
+		}
+	}
+		</script>      
+   
+    </head>
+    <body>
+        <div class="container">
+            
+            <header>
+              <!--  <h1>Login and Registration Form <span>with HTML5 and CSS3</span></h1>
+                <nav class="codrops-demos">
+                    <span>Click <strong>"Join us"</strong> to see the form switch</span>
+                    <a href="index.html">Demo 1</a>
+                    <a href="index2.html">Demo 2</a>
+                    <a href="index3.html" class="current-demo">Demo 3</a>
+                </nav>
+            -->
+            </header>
+            <section>               
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toVerification"></a>
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form name="reg_form"  action="#" method="POST" autocomplete="on"> 
+                                <h1> Too late! You missed it! </h1>
+								<p>We assure you, we will come back soon revived in Ojass'16!!</p>
+ <!--                               <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">First name</label>
+                                    <input id="name" class ="myname" name="FirstName" required type="text" placeholder="First Name" onBlur="validateFName()" autofocus />
+                                    
+                                </p>
+                                <p>
+                                    <label for="usernamesignup" class="uname" data-icon="u">Last name</label>
+                                    <input id="usernamesignup" class ="myname" name="LastName" required type="text" placeholder="Last Name" onBlur="validateLName()" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" >Email</label>
+                                    <input id="emailsignup" name="EmailId" required type="email" placeholder="myemailid@mail.com" onBlur="ValidateEmail()"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="u">Mobile </label>
+                                    <input id="passwordsignup" name="Mobile" required type="text" maxlength="10" placeholder="eg. 9876543210" onKeyUp ="contactno()"/>
+                                </p>
+
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Institute </label>
+                                    <input id="passwordsignup" name="Institute" required type="text" placeholder="Your College Name"/>
+                                </p>
+
+                                <p> 
+                                    <label for="" class="" data-icon="u" >Gender </label>
+                                    <select name="Gender"> 
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                </p>
+-->
+                                <!-- <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p> -->
+                                <!--<p class="signin button">                                    
+                                        <input type="submit" value="Sign up" name="registration" onClick="validate()"/> 
+                                </p>
+                                 <p class="change_link">  
+                                   <!-- Already a member ?
+                                    <a href="#toregister" class="to_register"> Go and log in </a>  -->
+                                    <!--If you already have the verification code then <a href='#toVerification' class='to_register'> Click here! </a>
+
+                                </p>-->
+                                
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="#" method="POST" autocomplete="on"> 
+                                <h1> Ojass'15 Verification </h1> 
+                                <!--<p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p> -->
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd">Thank You For Registering in Ojass'15 !</label>
+                                <p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd">Enter Your Ojass'15 Verification Code received on Your Mobile to Confirm your Registration</label>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Verification Code</label>
+                                    <input id="passwordsignup_confirm" name="txtVerifyCode" required type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+                                    <input type="submit" value="Verify" name ="verify"/> 
+                                </p>
+                                <p class="change_link">  
+                                    <!--Already a member ?
+                                    <a href="#tologin" class="to_register"> Go and log in </a>
+                                -->
+                                    
+                                </p>
+                            </form>
+                        </div>
+                        
+                        
+                        <!-- If User Allready has verification code than -->
+                        <div id="Verification" class="animate form">
+                            <form  action="#" method="POST" autocomplete="on"> 
+                                <h1> Ojass'15 Verification </h1> 
+                                <!--<p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p> -->
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd">Thank You For Registering!</label>
+                                <p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd">Enter your Ojass'15 verification Code received on Your Mobile to confirm your Registration</label>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youremail" data-icon="p">Email</label>
+                                    <input id="passwordsignup_confirm" name="txtEmailVerify" placeholder="mailid@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Verification Code</label>
+                                    <input id="passwordsignup_confirm" name="txtVerifyCode" required type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+                                    <input type="submit" value="Verify" name ="verifycode"/> 
+                                </p>
+                                <p class="change_link">  
+                                    <!--Already a member ?
+                                    <a href="#tologin" class="to_register"> Go and log in </a>
+                                -->
+                                    
+                                </p>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>  
+            </section>
+        </div>
+
+    </body>
+
+<!-- Mirrored from ojass.in/2016/archive/2015/registration/studentregistration.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Dec 2016 16:06:47 GMT -->
+</html>

@@ -1,0 +1,42 @@
+.sp_box{
+	display: inline-block;
+	width: 98%;
+	margin: auto;
+}
+	.half{
+		width: 48%;
+	}
+	.third{
+		width: 32%;
+	}
+.sp_img_box{
+	width: 100%;
+	margin: auto;
+}
+.head_sponsor{
+	display: block;
+	text-align: center;
+	color: #233;
+	font-family: 'AR Essence';
+	font-size: 25px;
+	margin: 10px 0px;
+	border-bottom: 1px solid #9aa;
+	border-top: 1px solid #9aa;
+}
+.sp_img{
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: 0px 2px 2px #9aa;
+	position: relative;
+	width: 150px;
+	height: 75px;
+	background-size: 100% 100%;
+}
+.sp_img:hover{
+	box-shadow: 0px 0px 0px #9aa;
+}
+
+.major{
+	width: 200px;
+	height: 100px;
+}

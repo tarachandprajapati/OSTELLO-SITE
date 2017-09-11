@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: /*url("../bg-pattern.gif") repeat scroll 0% 0% transparent;*/url("../binding_dark.html") repeat scroll center 0px transparent;
+	/* starry night     background-color: #000;
+    background-image: radial-gradient(#FFF, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#FFF, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#FFF, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0px 0px, 40px 60px, 130px 270px, 70px 100px;*//*
+	background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+            -webkit-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
+            -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
+            -webkit-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
+            -webkit-linear-gradient(0deg, #1b1b1b 10px, transparent 10px),
+            -webkit-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background: -moz-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+            -moz-linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
+            -moz-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
+            -moz-linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
+            -moz-linear-gradient(0deg, #1b1b1b 10px, transparent 10px),
+            -moz-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-size: 20px 20px;
+background-color: #131313;
+-pie-background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px / 20px,
+                 linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px / 20px,
+                 linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px / 20px,
+                 linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px / 20px,
+                 linear-gradient(90deg, #1b1b1b 10px, transparent 10px) 0 0 / 20px,
+                 linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424)
+                 0 0 / 20px #131313;
+behavior: url(/pie/PIE.htc);*/
+	font-family:"Myriad Pro", "Trebuchet MS", Helvetica, sans-serif;
+	font-size:12px;
+	color: #fff;
+	overflow:hidden;
+}
+
+#pp_thumbContainer1{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	height:65px;
+	width:100%;
+}
+#pp_thumbContainer1 .album{
+	position:absolute;
+	width:100%;
+	height:65px;
+	bottom:0px;
+}
+
+.album {
+	position:absolute;
+	bottom:0px;
+	left:-16px;
+	/*background:#222;*/
+	text-align:center;
+	border:1px solid #111;
+	padding:5px;
+	cursor:pointer;
+	/*width:169px;*/
+	color:#fff;
+	cursor:pointer;
+	text-shadow:0px 0px 1px #fff;
+	-moz-box-shadow:1px 1px 4px #000;
+	-webkit-box-shadow:1px 1px 4px #000;
+	box-shadow:1px 1px 4px #000;
+}
+#pp_thumbContainer1 .content{
+	position:absolute;
+	top:0px;
+	height:155px;
+	cursor:pointer;
+}
+#pp_thumbContainer1 img{
+	border:5px solid #fff;
+	-moz-box-shadow:1px 1px 7px #000;
+	-webkit-box-shadow:1px 1px 7px #000;
+	box-shadow:1px 1px 7px #000;
+}
+#pp_thumbContainer1 .content span{
+	display:none;
+}
+.pp_preview{
+	position:fixed;
+	top:150%;
+	left:50%;
+}
+.pp_preview img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:10px solid #fff;
+	border-bottom:45px solid #fff;
+	-moz-box-shadow:1px 1px 7px #000;
+	-webkit-box-shadow:1px 1px 7px #000;
+	box-shadow:1px 1px 7px #000;
+}
+.heading
+{
+	margin: 10px 300px 20px;
+	font-size: 30px;
+}
+.contacts
+{
+	display:inline-block; 
+	float:left;
+	width: 290px;
+}
+
+.contacts p
+{
+text-transform:capitalize;
+}

@@ -1,0 +1,48 @@
+#page-head{
+	color: #fff;
+	font-weight: 900;
+	font-family: felix titling;
+	font-size: 60px;
+}
+
+#sub-page-head{
+	font-size: 45px;
+}
+
+body{
+	background: url("../images/iq-bg.jpg") repeat;
+}
+
+div, p, li, h1, h2, h3 , .sub_content{
+	color: #fff;
+}
+
+.content h2{
+	background: none;
+	color: #fff;
+}
+
+.sub_menu{
+	background: none;
+	color: #fff;
+}
+
+.panel:target{
+	margin-left: 0%;
+	background: none;
+	box-shadow: 4px -4px 2px rgba(0,0,0,0.51);
+}
+
+.sub_menu:hover{
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.navigation a{
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+.navigation a:hover{
+	background: none;
+}
